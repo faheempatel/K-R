@@ -2,23 +2,26 @@
 
 main()
 {
-	int c;
+  int c;
 
-	while ((c = getchar()) != EOF)
-	{
-		if (c == ' ')
-		{
-			while ((c = getchar()) == ' ')
-				;
+  while ((c = getchar()) != EOF)
+  {
 
-			putchar(' ');
+    if (c == ' ')
+    {
 
-			if (c == EOF)
-				 break;
-		}
-		
-		putchar(c);
-	}
-	
+      while ((c = getchar()) == ' ')
+        ;
+
+       putchar(' ');
+
+       if (c == EOF)
+         break;
+
+    }	
+    
+    putchar(c);
+
+  }
 }
 
