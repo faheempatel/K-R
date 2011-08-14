@@ -1,27 +1,20 @@
 #include <stdio.h>
 
-main()
-{
-  int c;
+main(){
 
-  while ((c = getchar()) != EOF)
-  {
+	int c;
 
-    if (c == ' ')
-    {
+	while ((c = getchar()) != EOF){
 
-      while ((c = getchar()) == ' ')
-        ;
+		if (c == ' '){
+			while ((c = getchar()) == ' ');
 
-       putchar(' ');
+			putchar(' ');
 
-       if (c == EOF)
-         break;
-
-    }	
-    
-    putchar(c);
-
-  }
+			if (c == EOF)
+				break;
+		}	
+		putchar(c);
+	}
 }
 
