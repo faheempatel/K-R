@@ -8,7 +8,7 @@
 
 main()
 {
-	int c, word, is_letter;
+	int c, is_letter;
 	
 	is_letter = OUT;
 
