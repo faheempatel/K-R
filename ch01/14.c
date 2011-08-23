@@ -6,8 +6,7 @@
 
 main()
 {
-
-	int c, i;
+	int c, i, x;
 	int letters[26]; 
 	int numbers[10];
 
@@ -28,13 +27,21 @@ main()
 
 	for (i = 0; i < 26; ++i){
 		printf("%c: ", 'A' + i);
-		printf("%i\n", letters[i]);
+
+		for (x = 0; x < letters[i]; ++x)
+			printf("|");
+		
+		printf("\n");
 	}
 	
 	printf("\n");
 
 	for (i = 0; i < 10; ++i){
 		printf("%c: ", '0' + i);
-		printf("%i\n", numbers[i]);
+		
+		for (x = 0; x < numbers[i]; ++x)
+			printf("|");
+		
+		printf("\n");
 	}
 }
